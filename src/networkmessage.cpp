@@ -116,6 +116,7 @@ void NetworkMessage::addItem(uint16_t id, uint8_t count)
 	if (it.isAnimation) {
 		addByte(0xFE); // random phase (0xFF for async)
 	}*/
+	addString(""); // g_game.enableFeature(GameItemShader)
 }
 
 void NetworkMessage::addItem(const Item* item)
@@ -140,6 +141,9 @@ void NetworkMessage::addItem(const Item* item)
 	} else if (it.isSplash() || it.isFluidContainer()) {
 		addByte(item->getSubType());
 	}
+
+	addString(item->getShader()); // g_game.enableFeature(GameItemShader)
+
 }
 
 void NetworkMessage::addItemId(uint16_t itemId)

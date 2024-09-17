@@ -314,6 +314,10 @@ class ProtocolGame final : public Protocol
 
 		//otclient
 		void parseExtendedOpcode(NetworkMessage& msg);
+		void sendAttachedEffect(const Creature* creature, uint16_t effectId);
+		void sendDetachEffect(const Creature* creature, uint16_t effectId);
+		void sendShader(const Creature* creature, const std::string& shaderName);
+		void sendMapShader(const std::string& shaderName);
 
 		friend class Player;
 
@@ -339,6 +343,7 @@ class ProtocolGame final : public Protocol
 
 		bool debugAssertSent = false;
 		bool acceptPackets = false;
+		bool isMehah = false;
 };
 
 #endif
