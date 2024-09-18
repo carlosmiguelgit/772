@@ -1,3 +1,11 @@
+```lua
+g_game.enableFeature(GameWingsAurasEffectsShader)
+g_game.enableFeature(GameFormatCreatureName)
+g_game.enableFeature(GameCreatureShader)
+g_game.enableFeature(GameCreatureAttachedEffect) 
+g_game.enableFeature(GameItemShader)
+```
+
 # Nekiro's 7.72 Downgrade
 
 This downgrade is not download and run distribution, monsters and spells are probably not 100% correct.
