@@ -1,3 +1,6 @@
+# Cliente https://github.com/mehah/otclient
+
+game_feature
 ```lua
 g_game.enableFeature(GameWingsAurasEffectsShader)
 g_game.enableFeature(GameFormatCreatureName)
@@ -5,6 +8,10 @@ g_game.enableFeature(GameCreatureShader)
 g_game.enableFeature(GameCreatureAttachedEffect) 
 g_game.enableFeature(GameItemShader)
 ```
+if you have this error : 
+Error C2338 static_assert failed: 'Unicode support requires compiling with /utf-8' theforgottenserver C:\vcpkg\installed\x64-windows\include\fmt\base.h 458
+
+https://otland.net/threads/tfs-1-6-compiling-error.289749/
 
 # Nekiro's 7.72 Downgrade
 
